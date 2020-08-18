@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>SVG to GCODE converter, the dream</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<p>Offset x</p>
+			<input type="text" name="offsetx" placeholder="offset x" />
+			<p>Offset y</p>
+			<input type="text" name="offsety" placeholder="offset y" />
+			<p>Offset z</p>
+			<input type="text" name="offsetz" placeholder="offset z" />
+			<p>Safe distance</p>
+			<input type="text" name="safe_dist" placeholder="safe distance" />
+			<p>Scale (esoteric)</p>
+			<input type="text" name="scale" placeholder="scale" />
+			<div id="preview">
+				<input type="file" name="svg_file" />
+				<p>Preview</p>
+				<div class="preview"></div>
+			</div>
+			<p>SVG file</p>
+			<textarea class="preview-text" rows="10"></textarea>
+			<input type="submit" name="submit" value="SVG to GCODE">
+			<pre class="gcode"></pre>
+		</div>
+		<script type="text/javascript" src="svgpathdata.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
